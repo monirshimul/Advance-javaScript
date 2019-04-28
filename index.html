@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>JS-Async</title>
+    <script src="6_asyncAwaitFetch.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"
+    />
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>This is JS-ES6 Practice</h1>
+
+      <hr />
+      <div>
+        <div class="col-md-4 col-xs-6">
+          <button
+            id="btn1"
+            onclick="document.getElementById('test1').innerHTML = getPosts.call(this)"
+            type="button"
+            class="btn btn-success"
+          >
+            ES5
+          </button>
+          <hr />
+          <blockquote>
+            <p id="test1">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+              posuere erat a ante.
+            </p>
+          </blockquote>
+        </div>
+
+        <div class="col-md-4 col-xs-6">
+          <button
+            id="btn2"
+            onclick="document.getElementById('test2').innerHTML = getPosts.call(this)"
+            type="button"
+            class="btn btn-success"
+          >
+            ES6
+          </button>
+          <hr />
+          <blockquote>
+            <p id="test2">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+              posuere erat a ante.
+            </p>
+          </blockquote>
+        </div>
+
+        <div class="col-md-4 col-xs-6">
+          <button
+            id="btn3"
+            onclick="document.getElementById('test3').innerHTML = getPosts.call(this)"
+            type="button"
+            class="btn btn-success"
+          >
+            ES7
+          </button>
+          <hr />
+          <blockquote>
+            <p id="test3">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+              posuere erat a ante.
+            </p>
+          </blockquote>
+        </div>
+      </div>
+
+      <div id="msg"></div>
+    </div>
+  </body>
+</html>
